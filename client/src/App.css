@@ -1,0 +1,230 @@
+.App {
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#root .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.App h1{
+  font-size: 40px;
+  color: white;
+  background-color: darkturquoise;
+  padding: 15px 0px;
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+
+}
+
+/*Home Page */
+.App .home-page {
+  margin-top: 5vh;
+  width:70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: darkturquoise;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.home-page h2 {
+  font-size: 36px;
+  color: black;
+}
+
+.home-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.home-page form label {
+  font-size: 24px;
+  color: black;
+  margin: 10px;
+}
+
+.home-page form input {
+  font-size:24px;
+  padding: 15px;
+  color: black;
+  font-weight: 600;
+  border-radius: 5px;
+  width:100%;
+}
+
+.home-page form button {
+  font-size: 24px;
+  background-color: lightgreen;
+  color: black;
+  width: 60%;
+  padding: 10px 0px;
+  text-align: center;
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+/* chat - page */
+.App .chat-page {
+  width: 100%;
+}
+
+.chat-page h2 {
+  font-size: 24px;
+  color: darkturquoise;
+  background-color: black;
+  margin-top: -26px;
+  padding: 15px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.chat-page .chat-display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 70vh;
+  background-color: whitesmoke;
+  margin-top: -18px;
+}
+
+.chat-display .single-chat {
+  width: 50%;
+  overflow-wrap: break-word;
+}
+
+.chat-display .single-chat p{
+  margin: 3px;
+}
+
+.chat-display .single-chat #msg {
+  font-size: 20px;
+  padding: 10px 8px;
+  border-radius: 10px;
+}
+
+.chat-display #received  {
+  text-align: left;
+  padding-left: 6px;
+}
+
+.chat-display #received #name {
+  color: gray;
+}
+
+.chat-display #received #msg {
+  color: black;
+  background-color: lightgreen;
+}
+
+.chat-display #sent {
+  position: relative;
+  right: -49%;
+}
+
+.chat-display #sent  #name{
+  color: gray;
+  text-align: right;
+}
+
+.chat-display #sent #msg {
+  color: black;
+  background-color: lightskyblue;
+}
+
+
+.chat-page .input-message {
+  width: 100%;
+}
+
+.input-message form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.input-message form input {
+  width: 77%;
+  font-size: 24px;
+  color: black;
+  padding: 8px 5px;
+  border-radius: 5px;
+}
+
+.input-message #smiley-icon {
+  font-size: 30px;
+  color:black;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.input-message form button {
+  width: 17%;
+  font-size: 24px;
+  color: white;
+  background-color: darkturquoise;
+  border-radius: 10px;
+  padding: 8px 5px;
+  cursor: pointer;
+}
+
+/*EMOJI PICKER*/
+.input-message #emoji-picker {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  border-radius: 10px;
+  border: 13px solid violet;
+}
+
